@@ -2,3 +2,6 @@
 <app-add-todo (addTodo)=addTodo($event)></app-add-todo>
 <app-todos-iten *ngFor="let todo of todos" [todo]=todo (deleteTodo)=deleteTodo($event)>
 </app-todos-iten>
+
+<!-- for input pass the iterator to the child component
+for output get the output event emitter from the ts file  -->
